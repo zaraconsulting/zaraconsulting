@@ -1,0 +1,27 @@
+<form action="{{ url_for('contact') }}" method="POST" name="contact" id="contact" novalidate>
+  {{ form.hidden_tag() }}
+  <div class="text-center">
+    <div class="form-group">
+      {{ form.name(class='form-control', size='30', placeholder='Your Name *') }}
+    </div>
+    <div class="form-group">
+      {{ form.email(class='form-control', size='30', placeholder='Your Email *') }}
+    </div>
+    <div class="form-group">
+      {{ form.phone(class='form-control', type='tel', size='30', placeholder='Your Phone') }}
+    </div>
+    <div class="form-group">
+      {{ form.subject(class='form-control', size='30', placeholder='Subject') }}
+    </div>
+    <div class="form-group">
+      {{ form.message(class='form-control', cols='40', rows='6', placeholder='Your Message... *') }}
+    </div>
+    <!-- Google reCAPTCHA -->
+
+    <!-- honeypot -->
+    
+    <div class="form-group">
+      {{ form.submit(class='btn btn-hero') }}
+    </div>
+  </div>
+</form>
