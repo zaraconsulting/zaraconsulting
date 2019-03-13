@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="former,multipurpose,business,portfolio,agency,modern,bootstrap,bootstrap template,responsive,html,css,unique,cv,professional,onepage,creative,template,design,web design,web development">
+    <meta name="author" content="TONATONI">
+
+    <title>Zara Consulting, Inc.</title>
+
+    <link href="{{ url_for('static', filename='img/assets/favicon.ico') }}" rel="icon" type="image/ico">
+
+    <link href="{{ url_for('static', filename='css/owl-carousel.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ url_for('static', filename='css/bootstrap.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ url_for('static', filename='css/effects.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ url_for('static', filename='css/magnific-popup.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ url_for('static', filename='css/backgrounds.css') }}" rel="stylesheet" type="text/css">
+
+    <link href="{{ url_for('static', filename='fonts/FontAwesome/stylesheet.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ url_for('static', filename='fonts/Ion Icons/stylesheet.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ url_for('static', filename='fonts/ElegantThemes Icons/stylesheet.css') }}" rel="stylesheet" type="text/css">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600,800%7cNunito+Sans:200,300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700,900" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <!-- Start Preloader-->
+    <div id="preloader">
+        <div id="status">&nbsp;</div>
+    </div>
+    <!-- End Preloader-->
+
+
+    <!-- Start Header Section -->
+    {% include 'partials/navbar.html' %}
+    <!-- End Header Section -->
+
+
+    <!-- Start Index Section -->
+    {% block content %}{% endblock %}
+    <!-- End Index Section -->
+
+
+    <!-- Google Map -->
+    <section id="map" class="map"></section>
+    <!-- End Google Map -->
+
+
+    <!-- Start Footer Section -->
+    {% include 'partials/footer.html' %}
+    <!-- End Footer Section -->
+
+
+    <!-- Start Back To Top -->
+    <a data-scroll id="back-to-top" href="#hero"><i class="icon ion-chevron-up"></i></a>
+    <!-- End Back To Top -->
+
+
+    <!--   JQUERY FILES     -->
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/plugins.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+
+</html>
