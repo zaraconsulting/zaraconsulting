@@ -10,6 +10,7 @@ class Config:
   SQLALCHEMY_TRACK_MODIFICATIONS = False
   GOOGLE_MAPS_API_KEY = os.environ.get("GOOGLE_MAPS_API_KEY") or os.getenv("GOOGLE_MAPS_API_KEY")
   PRES_EMAIL = os.environ.get('PRES_EMAIL') or os.getenv('PRES_EMAIL')
+  NOREPLY_EMAIL = os.environ.get('NOREPLY_EMAIL') or os.getenv('NOREPLY_EMAIL')
   COMPANY_EMAIL = os.environ.get('COMPANY_EMAIL') or os.getenv('COMPANY_EMAIL')
   COMPANY_PHONE = os.environ.get('COMPANY_PHONE') or os.getenv('COMPANY_PHONE')
   MAIL_API_KEY = os.environ.get('MAIL_API_KEY') or os.getenv('MAIL_API_KEY')

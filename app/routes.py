@@ -1,6 +1,7 @@
 from app import app
 from flask import render_template, redirect, url_for
 from app.forms import ContactForm
+from app.email import send_email
 
 @app.context_processor
 def get_info():
@@ -20,5 +21,5 @@ def index():
 def contact():
   form = ContactForm()
   if form.validate_on_submit():
-    print("It works")
+    send_email()
   return redirect(url_for('index'))
