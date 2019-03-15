@@ -9,16 +9,15 @@
   <div class="hero-container container">
     <div class="hero-content">
       <div class="col-sm-12 m-auto text-center white fadeHero">
-        <ul class="list-inline hero-social">
+        <!-- <ul class="list-inline hero-social">
           <li><a href=""><i class="fa fa-google-plus"></i></a></li>
           <li><a href=""><i class="fa fa-twitter"></i></a></li>
           <li><a href=""><i class="fa fa-pinterest"></i></a></li>
           <li><a href=""><i class="fa fa-linkedin"></i></a></li>
           <li><a href=""><i class="fa fa-dribbble"></i></a></li>
-        </ul>
-        <h1 class="h1-lg mb10">Explore<br> creative World</h1>
-        <h5 class="lead h5-md mb20">Unordinary digital agency crafting sophisticated and<br> eccentric stuff that will
-          leave you speechless</h5>
+        </ul> -->
+        <h1 class="h1-lg mb10">Imagine<br> your world and build it</h1>
+        <h5 class="lead h5-md mb20">Results-driven agency with a focus on finding reliable solutions for today's problems</h5>
         <a href="#services" class="angle-more"><i class="i fa fa-angle-down"></i></a>
       </div>
     </div>
@@ -127,7 +126,7 @@
 <section id="team" class="bg-feature">
   <div class="container-fluid">
     <div class="heading  m-auto text-center pt140">
-      <h2><span class="f-xbold">People's Behind</span></h2>
+      <h2><span class="f-xbold">Our Mission</span></h2>
       <hr class="seperator">
       <h4 class="subheading">Awesome team</h4>
       <p>With a belief that culture drives commerce, we leverage shared values and ideals to inform strategy and design,
@@ -138,7 +137,7 @@
     <div class="row">
       <div class="col-md-4 col-sm-4 no-padding">
         <div class="team-box">
-          <img src="{{ url_for('static', filename='img/team/1.jpg') }}" alt="" class="img-responsive">
+          <img src="{{ url_for('static', filename='img/team/ananya.jpg') }}" alt="" class="img-responsive">
           <div class="team-inner">
             <h3 class="f-bold">Ananya Koduri</h3>
             <h5>Software Engineer</h5>
@@ -149,7 +148,7 @@
       </div>
       <div class="col-md-4 col-sm-4 no-padding">
         <div class="team-box">
-          <img src="{{ url_for('static', filename='img/team/2.jpg') }}" alt="" class="img-responsive">
+          <img src="{{ url_for('static', filename='img/team/a.jpg') }}" alt="" class="img-responsive">
           <div class="team-inner">
             <h3 class="f-bold">Derek Hawkins</h3>
             <h5>Software Engineer</h5>
@@ -160,7 +159,7 @@
       </div>
       <div class="col-md-4 col-sm-4 no-padding">
         <div class="team-box">
-          <img src="{{ url_for('static', filename='img/team/3.jpg') }}" alt="" class="img-responsive">
+          <img src="{{ url_for('static', filename='img/team/a.jpg') }}" alt="" class="img-responsive">
           <div class="team-inner">
             <h3 class="f-bold">Joel Carter</h3>
             <h5>Software Engineer</h5>
@@ -249,7 +248,7 @@
           <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas atque perspiciatis dolorem,
             accusantium sequi laboriosam, asperiores nisi eveniet, recusandae facere nobis quia numquam iusto quos.
             Optio hic dolorum quibusdam dolore.</p>
-          <a href="#" class="btn btn-hero">Call us now <i class="fa fa-angle-right"></i></a>
+          <a href="{{ url_for('index') }}#contact-us" class="btn btn-hero">Let's work together <i class="fa fa-angle-right"></i></a>
         </div>
       </div>
     </div>
@@ -448,7 +447,7 @@
 <section id="contact-form" class="bg-gray">
   <div class="container pt100 pb100">
     <div class="heading m-auto text-center mb30">
-      <h2 class="f-xbold">Contact Us</h2>
+      <h2 class="f-xbold" id="contact-us">Contact Us</h2>
       <hr class="seperator">
       <h4 class="subheading">Lets collaborate</h4>
       <p>With a belief that culture drives commerce, we leverage shared values and ideals to inform strategy and design,
