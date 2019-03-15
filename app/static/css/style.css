@@ -2391,6 +2391,6 @@ p {
     /* is width and height divided by two */
 }
 
-/* .team-img {
-    max-height: 556.5px;
-} */
+.team-box img {
+    height: 423px;
+}
