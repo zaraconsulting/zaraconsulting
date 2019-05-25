@@ -7,7 +7,7 @@ def send_email():
   form = ContactForm()
   context = {
     "form": form,
-    # "google_maps_api_key": app.config["GOOGLE_MAPS_API_KEY"],
+    "google_maps_api_key": app.config["GOOGLE_MAPS_API_KEY"],
     "name": form.name.data,
     "email": form.email.data,
     "phone": form.phone.data,
