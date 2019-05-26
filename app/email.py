@@ -26,6 +26,7 @@ def send_email():
     recipients=[f"{app.config['PRES_EMAIL']}"],
     html=render_template('email/mail.html', **context)
   )
+  # mail.send(msg)
   Thread(target=send_async_email, args=(app, msg)).start()
 
   # return requests.post(
