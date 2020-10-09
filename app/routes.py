@@ -1,5 +1,4 @@
-from app import app
-from flask import render_template, redirect, url_for
+from flask import render_template, redirect, url_for, current_app as app
 from app.forms import ContactForm
 from app.email import send_email
 
