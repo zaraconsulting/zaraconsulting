@@ -2,3 +2,26 @@
     min-width: 900px;
     min-height: 600px;
 } */
+
+.bg-feature p {
+    color: #000;
+}
+img.logo {
+    width: 5%;
+    padding-top: 5px;
+    display: inline;
+}
+
+@media screen and (max-width:426px) {
+    img.logo {
+        width: 15%;
+    }
+    
+}
+
+@media screen and (min-width:1024px) {
+    img.logo {
+        padding-top: 0;
+    }
+    
+}

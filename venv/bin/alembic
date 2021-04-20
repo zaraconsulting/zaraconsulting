@@ -1,4 +1,4 @@
-#!/home/derek/Development/zara_consulting/zaraconsulting/venv/bin/python3
+#!/home/derek/Development/zara_consulting/apps/flask/zaraconsulting/venv/bin/python3
 # EASY-INSTALL-ENTRY-SCRIPT: 'alembic==0.9.9','console_scripts','alembic'
 __requires__ = 'alembic==0.9.9'
 import re
