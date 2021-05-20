@@ -19,3 +19,4 @@ class Config:
   MAIL_DOMAIN = os.environ.get('MAIL_DOMAIN') or os.getenv('MAIL_DOMAIN')
   IMAGE_FOLDER = os.path.join(basedir, 'app/blueprints/blog/static/uploads')
   MAIL_ACCOUNT = os.environ.get('MAIL_ACCOUNT') or os.getenv('MAIL_ACCOUNT')
+  COMPANY_NAME = os.getenv('COMPANY_NAME') or os.environ.get('COMPANY_NAME')

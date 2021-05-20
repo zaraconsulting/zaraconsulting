@@ -1,6 +1,6 @@
-import requests
 from flask import render_template, current_app as app
 from app.forms import ContactForm
+import requests
 
 def send_email():
   form = ContactForm()

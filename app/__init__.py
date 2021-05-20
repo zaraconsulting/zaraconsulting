@@ -1,19 +1,14 @@
 from flask import Flask
 from config import Config
 from logging.handlers import SMTPHandler, RotatingFileHandler
-from flask_mail import Mail
 import os, logging
-
-mail = Mail()
 
 def create_app(config_class=Config):
     app = Flask(__name__)
     app.config.from_object(config_class)
 
-    mail.init_app(app)
-
     with app.app_context():
-        from .import routes, models
+        from .import routes, models, context_processors
 
     # Email Error Logging
     # if not app.debug:
