@@ -28,12 +28,16 @@ from app import mail
 def send_email(subject, sender, recipients, html_body, reply_to=None, bcc=None):
     msg = Message(subject, sender=sender, recipients=recipients, reply_to=reply_to, bcc=bcc)
     msg.html = html_body
+    print(msg.html)
     mail.send(msg)
 
 def send_contact_email(form_data):
-    send_email(f'[{app.config.get("COMPANY_NAME_SHORT")}] Contact Form Inquiry', 
-                sender='noreply@zaraconsulting.org',
-                reply_to=form_data.get('data'),
-                bcc=app.config.get('ADMIN'), 
-                recipients=[app.config.get('MAIL_USERNAME')],
-                html_body=render_template('email/mail.html', data=form_data))
+  # print(form_data)
+  send_email(
+    f'[{app.config.get("COMPANY_NAME_SHORT")}] Contact Form Inquiry', 
+    sender='noreply@zaraconsulting.org',
+    reply_to=form_data.get('email'),
+    bcc=app.config.get('ADMIN'), 
+    recipients=[app.config.get('MAIL_USERNAME')],
+    html_body=render_template('email/mail.html', **form_data)
+  )
