@@ -33,3 +33,9 @@ img.logo {
 .bg-6 {
     background-image: url(../img/backgrounds/bg-6.jpg) !important;
 }
+
+@media screen and (max-width: 768px) {
+    .parallaxe {
+        background-attachment: unset;
+    }
+}
