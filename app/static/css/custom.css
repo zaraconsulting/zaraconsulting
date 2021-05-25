@@ -25,3 +25,11 @@ img.logo {
     }
     
 }
+
+#services {
+    color: #fff;
+}
+
+.bg-6 {
+    background-image: url(../img/backgrounds/bg-6.jpg) !important;
+}
