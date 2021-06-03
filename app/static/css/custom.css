@@ -7,12 +7,12 @@
     color: #000;
 }
 img.logo {
-    width: 5%;
-    padding-top: 5px;
+    width: 7%;
+    /* padding-top: 5px; */
     display: inline;
 }
 
-@media screen and (max-width:426px) {
+/* @media screen and (max-width:426px) {
     img.logo {
         width: 15%;
     }
@@ -24,7 +24,7 @@ img.logo {
         padding-top: 0;
     }
     
-}
+} */
 
 #services {
     color: #fff;
