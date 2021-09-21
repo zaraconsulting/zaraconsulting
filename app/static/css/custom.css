@@ -12,19 +12,23 @@ img.logo {
     display: inline;
 }
 
-@media screen and (max-width:426px) {
+/* @media screen and (max-width:426px) {
     img.logo {
         width: 17%;
     }
     
-}
+} */
 
-/* @media screen and (min-width:1024px) {
+@media screen and (max-width:768px) {
     img.logo {
         padding-top: 0;
     }
     
-} */
+}
+
+img.logo {
+    min-width: 50px;
+}
 
 #services {
     color: #fff;
